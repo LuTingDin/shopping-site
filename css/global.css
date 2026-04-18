@@ -1,0 +1,90 @@
+/* Reset */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    /* Colors */
+    --color-bg:              #f5f3ef; /* 頁面背景 */
+    --color-surface:         #ffffff; /* 卡片背景 */
+    --color-text-primary:    #1a1a1a; /* 主要文字 */
+    --color-text-secondary:  #6b6b6b; /* 次要文字 */
+    --color-accent:          #2c2c2c; /* 按鈕、強調 */
+    --color-border:          #e0ddd8; /* 邊框 */
+    /* 字型規格 */
+    --font-primary:          'Helvetica Neue', Arial, sans-serif;
+    /* spacing規格 */
+    --spacing-sm: 8px;
+    --spacing-md: 16px;
+    --spacing-lg: 32px;
+    --spacing-xl: 64px;
+    --spacing-xs: 4px;
+}
+
+body {
+    font-family: var(--font-primary);
+    background-color: var(--color-bg);
+    color: var(--color-text-primary);
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/* 全局樣式 */
+.app {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+/* main 區塊會撐滿剩餘空間，讓 footer 固定在頁腳 */
+main {
+    flex: 1;
+}
+
+/* navbar */
+nav {
+    display: flex; /* 水平排列 */
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--spacing-md) var(--spacing-lg);
+}
+ul {
+    display: flex; 
+    gap: var(--spacing-md);
+    list-style: none;
+}
+.logo {
+    font-size: 18px;
+    color: var(--color-text-primary);
+    text-decoration: none;
+}
+.nav-link {
+    font-size: 14px;
+    color: var(--color-text-secondary);
+    text-decoration: none;
+}
+.cart-counter {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    font-size: 11px;
+    color: var(--color-surface); 
+    background-color: var(--color-accent); 
+    border-radius: 50%; /* 圓形 */
+}
+
+/* footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: var(--spacing-md);
+    background-color: var(--color-surface);
+    color: var(--color-text-secondary);
+    border-top: 1px solid var(--color-border);
+}

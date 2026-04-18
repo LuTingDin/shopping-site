@@ -1,0 +1,95 @@
+.cart {
+    display: flex;
+    flex-direction: column; /* 讓商品一組一組往下排列 */
+    min-width: 500px;
+    gap: var(--spacing-lg);
+    padding: var(--spacing-lg);
+    background-color: var(--color-surface);
+    border-radius: var(--spacing-md); /* 圓角 */
+}
+.cart-item {
+    display: flex; /* 讓圖片和文字水平排a列 */
+    align-items: center; /* 垂直置中 */
+    gap: var(--spacing-md);
+    border-bottom: 1px solid #eee; /* 分隔線 */
+    padding-bottom: var(--spacing-md);
+}
+.cart img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover; /* 圖片裁切方式，保持比例並填滿容器 */
+    flex-shrink: 0; /* 防止圖片縮小 */
+}
+.cart-item-info {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+}
+
+.remove-from-cart {
+    border: none;
+    background: none;
+    padding: 0;
+    font-size: 13px;
+    color: var(--color-text-secondary);
+    cursor: pointer;
+    text-decoration: underline;
+    width: fit-content;
+}
+
+.remove-from-cart:hover {
+    color: var(--color-text-primary);
+}
+
+.cart-summary {
+    display: flex;
+    justify-content: space-between; /* 讓總價和結帳按鈕分散在兩邊 */
+    align-items: center;
+    padding: var(--spacing-lg);
+}
+
+.cart-total {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--color-text-primary);
+}
+
+.checkout-btn {
+    padding: 10px 20px;
+    background-color: rgb(136, 144, 109);
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.quantity-selector {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+}
+
+.quantity-btn {
+    width: 26px;
+    height: 26px;
+    background-color: transparent;
+    color: var(--color-text-primary);
+    border: 1px solid var(--color-border);
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quantity-btn:hover {
+    background-color: var(--color-border);
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: var(--spacing-lg);
+}

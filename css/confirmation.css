@@ -1,0 +1,29 @@
+main {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+}
+
+.confirmation {
+    text-align: center;
+    padding: 50px;
+}
+.confirmation p {    
+    font-size: 18px;
+    font-style: italic;
+    color: var(--color--text-secondary);
+    margin-bottom: 20px;
+}
+.confirmation button {
+    padding: 10px 20px;
+    background-color: rgb(136, 144, 109);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.confirmation button:hover {
+    background-color: rgb(120, 128, 95);
+} 
