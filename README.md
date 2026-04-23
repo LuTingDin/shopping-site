@@ -1,5 +1,7 @@
 # MAISON — Minimal Lifestyle Store
 
+**Live Demo:** https://lutingdin.github.io/shopping-site/
+
 A responsive front-end shopping website built with vanilla JavaScript, HTML, and CSS. Designed with a minimalist aesthetic and focused on clean code structure and practical user experience.
 
 ## Features
